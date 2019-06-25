@@ -2,5 +2,5 @@
 title: MANIFESTO
 date: 2019-06-24 16:37:53
 tags:
-cover_index: https://upload.wikimedia.org/wikipedia/commons/9/98/Man_pilos_Louvre_MNE1330.jpg
 ---
+Pileus project born in the concept of undisputed free internet to help average virtual citizen overcross boundaries of geo-racism and data-collection stigma
