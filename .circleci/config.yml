@@ -27,8 +27,8 @@ jobs:
           command: |
             printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
             apt-get update
-            apt-get install -y python3-pip
-            pip3 install --upgrade awscli
+            apt-get install -y python-pip
+            pip install --upgrade awscli
       - run:
           name: Push to S3 bucket
           command: cd public/ && aws s3 sync . s3://getpileus.com --region eu-central-1
