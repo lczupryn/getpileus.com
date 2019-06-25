@@ -14,7 +14,9 @@ jobs:
             - npm-deps-{{ checksum "package.json" }}
       - run:
           name: Install dependencies
-          command: npm install
+          command: |
+            npm install hexo-generator-tag hexo-generator-feed hexo-renderer-ejs hexo-renderer-less hexo-renderer-marked hexo-pagination hexo-all-minifier hexo-autoprefixer hexo-front-matter --save
+            npm install
       - save_cache:
           key: npm-deps-{{ checksum "package.json" }}
           paths:
